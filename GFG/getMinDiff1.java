@@ -3,11 +3,11 @@ package GFG;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class getMinDiff {
+public class getMinDiff1 {
     public static void main(String[] args) {
 
        int k = 2; int arr[] = {1, 5, 8, 10};
-       getMinDiff obj = new getMinDiff();
+       getMinDiff1 obj = new getMinDiff1();
        int vale = obj.getMinDiff(k, arr);
        System.out.println(vale);
         

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class findMajority {
+public class findMajority1 {
     public static void main(String[] args) {
-        findMajority obj = new findMajority();
+        findMajority1 obj = new findMajority1();
         int arr[] = {2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6};
         List<Integer> value = new ArrayList<>();
         value = obj.findMajority(arr);

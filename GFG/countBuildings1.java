@@ -1,9 +1,9 @@
 package GFG;
 
-public class countBuildings {
+public class countBuildings1 {
     public static void main(String[] args) {
         int arr[] = {7, 7, 8, 3, 2, 8, 9, 7};
-        countBuildings.countBuildings(arr);
+        countBuildings1.countBuildings(arr);
 
     }
     static int countBuildings(int[] height) {
