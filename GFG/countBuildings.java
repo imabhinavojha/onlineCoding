@@ -6,7 +6,6 @@ public class countBuildings {
         countBuildings.countBuildings(arr);
 
     }
-
     static int countBuildings(int[] height) {
         int count = 1, temp = height[0];
         for (int i = 0; i < height.length; i++) {
