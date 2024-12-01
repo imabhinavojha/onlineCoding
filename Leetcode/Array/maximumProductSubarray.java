@@ -6,11 +6,15 @@ public class maximumProductSubarray {
         
         maximumProductSubarray obj = new maximumProductSubarray();
         
-        int[] arr = { 0, 2, 3};
-        obj.maxProduct(arr);
+        // int[] arr = { 0, 2, 3};
+        // obj.maxProduct(arr);
         
-        int[] arr1 = { 0, 2};
-        obj.maxProduct1(arr1);
+        // int[] arr1 = { 0, 2};
+        // obj.maxProduct1(arr1);
+
+        int[] arr2 = { -2, 6, -3, -10, 0, 2};
+        int val =  obj.maxProduct2(arr2);
+        System.out.println(val);
     }
 
     public int maxProduct(int[] nums) {
@@ -46,5 +50,31 @@ public class maximumProductSubarray {
     
         System.out.println(maxSoFar);
         return maxSoFar;
+    }
+
+    public int maxProduct2(int[] arr) {
+        int n = arr.length;
+        int fpro = 1;
+        int bpro = 1;
+        int max = Integer.MIN_VALUE;
+        for(int i =0,j=n-1;i<n;i++,j--){
+            fpro *=arr[i];
+            bpro *=arr[j];
+            if(bpro>max){
+                max = bpro;
+                
+            }
+            if(fpro>max){
+                max = fpro;
+            }
+              if(fpro==0){
+                fpro = 1;
+            }
+            if(bpro==0){
+                bpro = 1;
+            }
+
+        }
+        return max;
     }
 }

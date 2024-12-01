@@ -4,8 +4,8 @@ import java.util.Arrays;
 public class checkAnagram {
     public static void main(String[] args) {
 
-        String str1 = "LiSten".replaceAll("\\s", "").toLowerCase();
-        String str2 = "SilE1nt".replaceAll("\\s", "").toLowerCase();
+        String str1 = "geeks".replaceAll("\\s", "").toLowerCase();
+        String str2 = "kseeg".replaceAll("\\s", "").toLowerCase();
 
         if (str1.length() != str2.length()) {
             System.out.println("not a anagram");
