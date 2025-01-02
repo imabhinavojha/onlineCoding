@@ -1,5 +1,3 @@
-package Rough;
-
 class def {
     public void sum() {
         System.out.println("calss def");

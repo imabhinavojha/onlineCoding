@@ -1,5 +1,3 @@
-package Rough;
-
 class abc{
     public void sum(int a, int b) {
         System.out.println("2 sum");

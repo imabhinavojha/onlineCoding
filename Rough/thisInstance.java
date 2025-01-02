@@ -1,4 +1,3 @@
-package Rough;
 
 class Sample {
     Sample name() {
